@@ -16,6 +16,7 @@
 		E232E97E2BF36CA0001BA357 /* ControlButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E232E97D2BF36CA0001BA357 /* ControlButton.swift */; };
 		E232E9802BF39AC3001BA357 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E232E97F2BF39AC3001BA357 /* Constants.swift */; };
 		E232E9822BF39CAC001BA357 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E232E9812BF39CAC001BA357 /* Extension.swift */; };
+		E232E9862BF5C5E5001BA357 /* TimerPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E232E9852BF5C5E5001BA357 /* TimerPickerView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		E232E97D2BF36CA0001BA357 /* ControlButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlButton.swift; sourceTree = "<group>"; };
 		E232E97F2BF39AC3001BA357 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		E232E9812BF39CAC001BA357 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		E232E9852BF5C5E5001BA357 /* TimerPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerPickerView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +90,7 @@
 			isa = PBXGroup;
 			children = (
 				E232E97D2BF36CA0001BA357 /* ControlButton.swift */,
+				E232E9852BF5C5E5001BA357 /* TimerPickerView.swift */,
 			);
 			path = "Custom Classes";
 			sourceTree = "<group>";
@@ -167,6 +170,7 @@
 				E2326F2E2BE29CCB00CC4397 /* StopWatchViewController.swift in Sources */,
 				E2326F2A2BE29CCB00CC4397 /* AppDelegate.swift in Sources */,
 				E232E9822BF39CAC001BA357 /* Extension.swift in Sources */,
+				E232E9862BF5C5E5001BA357 /* TimerPickerView.swift in Sources */,
 				E2326F2C2BE29CCB00CC4397 /* SceneDelegate.swift in Sources */,
 				E232E97E2BF36CA0001BA357 /* ControlButton.swift in Sources */,
 			);
