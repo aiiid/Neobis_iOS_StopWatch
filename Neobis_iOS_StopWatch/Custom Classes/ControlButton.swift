@@ -20,7 +20,6 @@ class ControlButton: UIButton {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        addTarget(self, action: #selector(buttonTapped), for: .touchUpInside)
         setImageFromName()
     }
     
@@ -52,7 +51,15 @@ class ControlButton: UIButton {
         ])
     }
     
-    @objc private func buttonTapped() {
-        actionHandler?()
+    func animateOut(){
+        UIView.animate(withDuration: 0.3) {
+            self.alpha = 0.5
+        }
+    }
+    
+    func animateIn(){
+        UIView.animate(withDuration: 0.3) {
+            self.alpha = 1
+        }
     }
 }

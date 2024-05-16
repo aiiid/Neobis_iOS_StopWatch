@@ -53,6 +53,9 @@
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="string" keyPath="imageName" value="Stop.png"/>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="resetPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lCm-hX-XpC"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tt0-1t-qMg" customClass="ControlButton" customModule="Neobis_iOS_StopWatch" customModuleProvider="target">
                                         <rect key="frame" x="89.999999999999986" y="0.0" width="60.000000000000014" height="60"/>
@@ -65,6 +68,9 @@
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="string" keyPath="imageName" value="Pause.png"/>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="pausePressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mZv-rD-dl0"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eZj-a8-8HT" customClass="ControlButton" customModule="Neobis_iOS_StopWatch" customModuleProvider="target">
                                         <rect key="frame" x="180" y="0.0" width="60" height="60"/>
@@ -105,6 +111,9 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="pauseButton" destination="tt0-1t-qMg" id="XjE-UB-KwL"/>
+                        <outlet property="playButton" destination="eZj-a8-8HT" id="pRb-LE-PF9"/>
+                        <outlet property="resetButton" destination="elg-fN-pCq" id="46z-3a-v4Y"/>
                         <outlet property="timeLabel" destination="5wC-58-REb" id="TVy-oB-Ky2"/>
                         <outlet property="timeTypeSegmentedControl" destination="juJ-m9-2NJ" id="rvB-FU-A1x"/>
                         <outlet property="timerPicker" destination="KcR-fv-HyS" id="qEH-Pr-Bac"/>
