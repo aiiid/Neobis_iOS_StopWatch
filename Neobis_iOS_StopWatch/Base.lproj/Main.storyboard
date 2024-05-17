@@ -16,8 +16,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="juJ-m9-2NJ">
-                                <rect key="frame" x="100" y="194" width="193" height="32"/>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="juJ-m9-2NJ">
+                                <rect key="frame" x="100" y="139.66666666666666" width="193" height="32"/>
                                 <segments>
                                     <segment title="Timer"/>
                                     <segment title="Stopwatch"/>
@@ -26,15 +26,15 @@
                                     <action selector="timeTypeSegmentedControl:" destination="BYZ-38-t0r" eventType="valueChanged" id="nWG-Fc-s0X"/>
                                 </connections>
                             </segmentedControl>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="timer" translatesAutoresizingMaskIntoConstraints="NO" id="RRi-iE-Brq">
-                                <rect key="frame" x="166.66666666666666" y="124" width="60" height="60"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RRi-iE-Brq">
+                                <rect key="frame" x="166.66666666666666" y="124" width="60" height="5.6666666666666572"/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="lessThanOrEqual" constant="60" id="rgh-hK-oJl"/>
                                     <constraint firstAttribute="width" relation="lessThanOrEqual" constant="60" id="s15-Un-Xkz"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5wC-58-REb">
-                                <rect key="frame" x="165.66666666666666" y="285" width="61.666666666666657" height="20.333333333333314"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5wC-58-REb">
+                                <rect key="frame" x="165.66666666666666" y="230.66666666666666" width="61.666666666666657" height="31.333333333333343"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="26"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -89,8 +89,8 @@
                                     </button>
                                 </subviews>
                             </stackView>
-                            <pickerView contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KcR-fv-HyS" customClass="TimerPickerView" customModule="Neobis_iOS_StopWatch" customModuleProvider="target">
-                                <rect key="frame" x="37" y="384" width="320" height="162"/>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KcR-fv-HyS" customClass="TimerPickerView" customModule="Neobis_iOS_StopWatch" customModuleProvider="target">
+                                <rect key="frame" x="37" y="327" width="320" height="216"/>
                             </pickerView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -114,6 +114,7 @@
                         <outlet property="pauseButton" destination="tt0-1t-qMg" id="XjE-UB-KwL"/>
                         <outlet property="playButton" destination="eZj-a8-8HT" id="pRb-LE-PF9"/>
                         <outlet property="resetButton" destination="elg-fN-pCq" id="46z-3a-v4Y"/>
+                        <outlet property="timeImage" destination="RRi-iE-Brq" id="GUx-MJ-bNN"/>
                         <outlet property="timeLabel" destination="5wC-58-REb" id="TVy-oB-Ky2"/>
                         <outlet property="timeTypeSegmentedControl" destination="juJ-m9-2NJ" id="rvB-FU-A1x"/>
                         <outlet property="timerPicker" destination="KcR-fv-HyS" id="qEH-Pr-Bac"/>
@@ -136,7 +137,6 @@
         </designable>
     </designables>
     <resources>
-        <image name="timer" width="512" height="512"/>
         <namedColor name="AccentColor">
             <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>

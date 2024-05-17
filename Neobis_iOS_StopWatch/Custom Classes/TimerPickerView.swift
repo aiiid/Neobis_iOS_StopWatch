@@ -34,7 +34,19 @@ class TimerPickerView: UIPickerView {
     func resetTimer(){
         let numberOfComponents = self.numberOfComponents
         for component in 0..<numberOfComponents {
-            self.selectRow(-1, inComponent: component, animated: true)
+            self.selectRow(0, inComponent: component, animated: true)
+        }
+    }
+    
+    func animateIn(){
+        UIView.animate(withDuration: 0.3){
+            self.alpha = 1.0
+        }
+    }
+    
+    func animateOut(){
+        UIView.animate(withDuration: 0.3){
+            self.alpha = 0.0
         }
     }
     
