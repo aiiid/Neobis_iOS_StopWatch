@@ -5,7 +5,7 @@ This app is a basic timer and stopwatch.
 Build using UIkit, in particular `UISegmentedControl` for switching between modes. `UIPickerView` for setting timer time.
 It includes `Reset`, `Play`, and `Pause` buttons which perform their functions as expected.
   
-<img src="https://github.com/aiiid/Neobis_iOS_StopWatch/assets/123296393/b1616bd5-b700-45f7-af54-bd93ade8895f" alt="App Screenshot" width="500">
+<img src="https://github.com/aiiid/Neobis_iOS_StopWatch/assets/123296393/b1616bd5-b700-45f7-af54-bd93ade8895f" alt="App Screenshot" width="300">
 
 ## Features
 - **Timer Mode**: Set and run a countdown timer.
